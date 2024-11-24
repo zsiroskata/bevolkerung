@@ -1,0 +1,68 @@
+﻿<Window x:Class="bevolkerung.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bevolkerung"
+        mc:Ignorable="d"
+     Height="750" Width="1300">
+    <Grid>
+
+        <ComboBox Name="comboBox"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top"
+                  Width="120"
+                  Height="30"
+                  Margin="50,50,0,0"
+                  SelectionChanged="ComboBox_SelectionChanged" />
+
+        <!-- Megoldás mondatos label -->
+        <Label Name="megoldasMondatosLabel"
+               Content="feladat egy mondatos megoldása:"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="200,50,0,0"
+               Width="400" Height="30"/>
+
+        <DataGrid Name="adatokDataGrid"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Top"
+                  Margin="0,100,0,0"
+                  Width="1200"
+                  Height="337"
+                  AutoGenerateColumns="True"
+                  IsReadOnly="True"/>
+
+        <!-- Népcsoport -->
+        <Label Name="nepcsoportLabel"
+               Content="Népcsoport: "
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="50,650,0,0"
+               Width="300" Height="30"/>
+
+        <!-- Iskolai végzettség -->
+        <Label Name="iskolaiVegzettsegLabel"
+               Content="Iskolai végzettség: "
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="350,650,0,0"
+               Width="300" Height="30"/>
+
+        <!-- Sör fogyasztás -->
+        <Label Name="sorFogyasztasLabel"
+               Content="Sör fogyasztás évente: "
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="650,650,0,0"
+               Width="300" Height="30"/>
+
+        <!-- Krumpli fogyasztás -->
+        <Label Name="krumpliFogyasztasLabel"
+               Content="Krumpli fogyasztás évente: "
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="950,650,0,0"
+               Width="300" Height="30"/>
+    </Grid>
+</Window>
