@@ -38,18 +38,6 @@ namespace bevolkerung
             }
             adatokDataGrid.ItemsSource = lakossag;
         }
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (comboBox.SelectedIndex == -1) return;
-
-            // Kiválasztott index alapján az adat
-            var selectedPerson = lakossag[comboBox.SelectedIndex];
-
-            // Adatok frissítése a címkékben
-            nepcsoportLabel.Content = $"Népcsoport: {selectedPerson.Nepcsoport ?? "N/A"}";
-            iskolaiVegzettsegLabel.Content = $"Iskolai végzettség: {selectedPerson.IskolaiVegzettseg ?? "N/A"}";
-            sorFogyasztasLabel.Content = $"Sör fogyasztás évente: {selectedPerson.SorFogyasztasEvente} liter";
-            krumpliFogyasztasLabel.Content = $"Krumpli fogyasztás évente: {selectedPerson.KrumpiFogyasztasEvente} kg";
-        }
+       
     }
 }

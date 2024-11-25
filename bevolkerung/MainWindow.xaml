@@ -14,7 +14,7 @@
                   Width="120"
                   Height="30"
                   Margin="50,50,0,0"
-                  SelectionChanged="ComboBox_SelectionChanged" />
+                  />
 
         <!-- Megoldás mondatos label -->
         <Label Name="megoldasMondatosLabel"
@@ -25,44 +25,30 @@
                Width="400" Height="30"/>
 
         <DataGrid Name="adatokDataGrid"
-                  HorizontalAlignment="Center"
-                  VerticalAlignment="Top"
-                  Margin="0,100,0,0"
-                  Width="1200"
-                  Height="337"
-                  AutoGenerateColumns="True"
-                  IsReadOnly="True"/>
-
-        <!-- Népcsoport -->
-        <Label Name="nepcsoportLabel"
-               Content="Népcsoport: "
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top"
-               Margin="50,650,0,0"
-               Width="300" Height="30"/>
-
-        <!-- Iskolai végzettség -->
-        <Label Name="iskolaiVegzettsegLabel"
-               Content="Iskolai végzettség: "
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top"
-               Margin="350,650,0,0"
-               Width="300" Height="30"/>
-
-        <!-- Sör fogyasztás -->
-        <Label Name="sorFogyasztasLabel"
-               Content="Sör fogyasztás évente: "
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top"
-               Margin="650,650,0,0"
-               Width="300" Height="30"/>
-
-        <!-- Krumpli fogyasztás -->
-        <Label Name="krumpliFogyasztasLabel"
-               Content="Krumpli fogyasztás évente: "
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top"
-               Margin="950,650,0,0"
-               Width="300" Height="30"/>
+          AutoGenerateColumns="False"
+          IsReadOnly="True"
+          Width="1200"
+          Height="337"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Top"
+          Margin="0,100,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="Nem" Binding="{Binding Nem}" />
+                <DataGridTextColumn Header="Születési Év" Binding="{Binding SzuletesiEv}" />
+                <DataGridTextColumn Header="Súly" Binding="{Binding Suly}" />
+                <DataGridTextColumn Header="Magasság" Binding="{Binding Magassag}" />
+                <DataGridTextColumn Header="Dohányzik" Binding="{Binding Dohanyzo}" />
+                <DataGridTextColumn Header="Nemzetiség" Binding="{Binding Nemzetiseg}" />
+                <DataGridTextColumn Header="Népcsoport" Binding="{Binding Nepcsoport}" />
+                <DataGridTextColumn Header="Tartomány" Binding="{Binding Tartomany}" />
+                <DataGridTextColumn Header="Nettó Jövedelem" Binding="{Binding NettoJovedelem}" />
+                <DataGridTextColumn Header="Iskolai Végzettség" Binding="{Binding IskolaiVegzettseg}" />
+                <DataGridTextColumn Header="Politikai Nézet" Binding="{Binding PolitikaikaiNezet}" />
+                <DataGridTextColumn Header="Aktív Szavazó" Binding="{Binding Szavazo}" />
+                <DataGridTextColumn Header="Sör Fogyasztás Évente" Binding="{Binding SorFogyasztasEvente}" />
+                <DataGridTextColumn Header="Krumpli Fogyasztás Évente"  Binding="{Binding KrumpiFogyasztasEvente}" />
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
