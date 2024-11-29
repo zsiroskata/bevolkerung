@@ -50,37 +50,6 @@ namespace bevolkerung
             AktivSzavazo = s[12] == "igen";
             SorFogyasztasEvente = s[13] == "NA" ? (int?)null : int.Parse(s[13]);
             KrumpiFogyasztasEvente = s[14] == "NA" ? (int?)null : int.Parse(s[14]);
-        }
-
-        //2.feladat
-        public int HaviNetto()
-        {
-            return NettoJovedelem / 12;
-        }
-        //3.feladat
-        public int eletkor()
-        {
-            int ev = DateTime.Now.Year;
-            return ev - SzuletesiEv;
-        }
-
-        //4.feladat
-        //public override string ToString()
-        //{
-        //    return ToString(true);
-        //}
-        //public string ToString(bool parameter)
-        //{
-        //    if (parameter)
-        //    {
-        //        return $"{Id}\t{Nem}\t{SzuletesiEv}\t{Suly}\t{Magassag}";
-        //    }
-        //    else
-        //    {
-        //        return $"{Id}\t{Nemzetiseg}\t{Nepcsoport}\t{Tartomany}\t{NettoJovedelem}";
-
-        //    }
-
-        //}
+        } 
     }
 }

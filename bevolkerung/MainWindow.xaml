@@ -13,7 +13,7 @@
                   VerticalAlignment="Top"
                   Width="120"
                   Height="30"
-                  Margin="50,50,0,0"
+                  Margin="50,50,0,0" SelectionChanged="comboBox_SelectionChanged"
                   />
 
         <!-- Megoldás mondatos label -->
@@ -22,8 +22,13 @@
                HorizontalAlignment="Left"
                VerticalAlignment="Top"
                Margin="200,50,0,0"
-               Width="400" Height="30"/>
-
+               Width="242" Height="30"/>
+        <Label x:Name="megold"
+            Content=""
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="471,50,0,0"
+            Width="242" Height="30"/>
         <DataGrid Name="adatokDataGrid"
           AutoGenerateColumns="False"
           IsReadOnly="True"
@@ -50,5 +55,6 @@
                 <DataGridTextColumn Header="Krumpli Fogyasztás Évente"  Binding="{Binding KrumpiFogyasztasEvente}" />
             </DataGrid.Columns>
         </DataGrid>
+
     </Grid>
 </Window>
