@@ -28,7 +28,7 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Margin="471,50,0,0"
-            Width="242" Height="30"/>
+            Width="502" Height="30"/>
         <DataGrid Name="adatokDataGrid"
           AutoGenerateColumns="False"
           IsReadOnly="True"
@@ -55,6 +55,8 @@
                 <DataGridTextColumn Header="Krumpli Fogyasztás Évente"  Binding="{Binding KrumpiFogyasztasEvente}" />
             </DataGrid.Columns>
         </DataGrid>
+        <ListBox Name="listBox" HorizontalAlignment="Left" Height="166" Margin="50,492,0,0" VerticalAlignment="Top" Width="497"/>
+        <Label Content="lista megoldás" HorizontalAlignment="Left" Height="42" Margin="50,450,0,0" VerticalAlignment="Top" Width="269" FontWeight="Bold"/>
 
     </Grid>
 </Window>
